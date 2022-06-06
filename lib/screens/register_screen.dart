@@ -36,9 +36,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Register Screen"),
-        actions: [
-          IconButton(onPressed: _onGotoLoginScreen, icon: const Icon(Icons.login))
-        ],
       ),
       body: Column(
         children: [
@@ -65,6 +62,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
           MaterialButton(
             onPressed: _onRegister,
             child: const Text("Register"),
+          ),
+          MaterialButton(
+            onPressed: _onGotoLoginScreen,
+            child: const Text("Login"),
           )
         ],
       ),
